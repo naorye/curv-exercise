@@ -56,15 +56,12 @@ TransactionItem.defaultProps = {
     classes: {},
 };
 
-export default withStyles((theme) => {
-    console.log(theme);
-    return {
-        transactionButton: {},
-        sendIcon: {
-            marginLeft: theme.spacing.unit,
-        },
-        infoIcon: {
-            marginLeft: theme.spacing.unit,
-        },
-    };
-})(TransactionItem);
+export default withStyles(theme => ({
+    transactionButton: {},
+    sendIcon: {
+        marginLeft: theme.spacing.unit,
+    },
+    infoIcon: {
+        marginLeft: theme.spacing.unit,
+    },
+}))(TransactionItem);
